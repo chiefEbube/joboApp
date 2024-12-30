@@ -10,10 +10,10 @@ interface User {
 }
 
 interface GlobalContextType {
-    isLoggedin: boolean;
+    isLoggedIn: boolean;
     user: User | null
     loading: boolean;
-    refetch: (newParams?: Record<string, string | number>) => Promise<void>
+    refetch: (newParams: Record<string, string | number>) => Promise<void>
 }
 
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined)
