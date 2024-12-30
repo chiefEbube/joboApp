@@ -1,5 +1,5 @@
 import { Link } from "expo-router";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View } from "react-native";
 
 export default function Index() {
   return (
@@ -8,10 +8,9 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "plum"
       }}
     >
-      <Text className="font-bold text-lg my-10">Hello World</Text>
+      <Text className="my-10 font-rubik text-3xl">Hello World</Text>
       <Link href="/sign-in">Sign In</Link>
       <Link href="/explore">Explore</Link>
       <Link href="/profile">Profile</Link>
@@ -19,10 +18,3 @@ export default function Index() {
     </View>
   );
 }
-
-
-const styles = StyleSheet.create({
-  text: {
-    color: "red"
-  }
-})
