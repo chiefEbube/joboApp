@@ -11,6 +11,7 @@ export default function Index() {
         backgroundColor: "plum"
       }}
     >
+      <Text className="font-bold text-lg my-10">Hello World</Text>
       <Link href="/sign-in">Sign In</Link>
       <Link href="/explore">Explore</Link>
       <Link href="/profile">Profile</Link>
