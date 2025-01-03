@@ -21,7 +21,7 @@ export default function Index() {
     params: {
       filter: params.filter!,
       query: params.query!,
-      limit: 16
+      limit: 6
     },
     skip: true
   })
@@ -32,7 +32,7 @@ export default function Index() {
     refetch({
       filter: params.filter!,
       query: params.query!,
-      limit: 16,
+      limit: 6,
     })
   }, [params.filter, params.query])
 
